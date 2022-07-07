@@ -90,3 +90,23 @@ Git 中，项目叫做 *repository*，简称 *repo*。在开始任何工作前�
 
 在页面左侧找到 Access -> Collaborators，点击 Add people。输入对应的人的用户名，点击 add 即可。再让对方打开 https://github.com/\$你的用户名\$/\$你的项目名称\$/invitations 即可接受请求。
 
+## *Push* 与 *Fetch*
+
+Push 和 Fetch 是两种云端的基本操作。如果你没有使用云端操作，那么这两个步骤不是必须的。
+
+在你进行了一个 *Commit* 之后，你需要使用 *Push* 将它上传到云端。或者在你的协作者进行了一个 *Commit* 后，你需要使用 *Fetch* 将其拉去到本地。注意，对于任何操作，一定是先 *Fetch*（如果有的话） 之后再 *Push*。如果当前存在需要 *Fetch* 的内容，*Push origin* 按钮会变成 *Fetch*。
+
+<img src="https://s2.loli.net/2022/07/07/PgAi2E35kKjNLC4.png" alt="image-20220707162938812" style="zoom: 67%;" />
+
+## *Branch*
+
+*Branch* 是 git 的另一个特性，它允许你构建代码的不同分支，以此来进行任何调试而不影响之前的代码。这个功能在非协作时可以被回滚 *Commit* 代替，因此这里暂不介绍。在协作的时候，它允许两个人同时编辑同一个内容，并进行 *Merge*。
+
+## 回滚
+
+回滚代表你可以将你现在的所有内容变成之前的某一个状态。尽管还提供了更高级的回滚方式，但是最方便的还是这种。
+
+首先，你需要提交一个 *Commit* 来保存你当前的所有改动。
+
+之后，点击 *Changes* 旁边的 *History*。
+
